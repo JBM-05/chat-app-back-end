@@ -9,7 +9,7 @@ import cors from "cors";
 import { server,app ,io } from "./lib/Sockets.js";
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: process.env.base_Url ,
     credentials: true,
   })
 );
